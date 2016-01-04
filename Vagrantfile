@@ -5,8 +5,8 @@
 
 VAGRANTFILE_API_VERSION = "2" 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|   
-  config.vm.box = "ansible-ubuntu-1204-i386"   
-  config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/precise/current/precise-server-cloudimg-i386-vagrant-disk1.box"   
+  config.vm.box = "ansible-ubuntu-1404-amd64"   
+  config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box"   
   
   config.vm.define "control" do |control|     
     control.vm.network :private_network, ip: "192.168.61.10"   
